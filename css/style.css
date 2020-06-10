@@ -7,7 +7,7 @@
 }
 
 .row{
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 /* menu */
@@ -19,6 +19,10 @@ header{
 }
 nav{
   display: flex;
+}
+nav > .menu.center,
+nav > .menu.right{
+  justify-content: flex-end;
 }
 header .logo img{
   height: 25px;
@@ -32,7 +36,15 @@ header .menu.left {
 header .menu.center{
   width: 400px;
   display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+header .menu.center li{
+  padding: 0 7px;
+}
+header .menu.right{
+  width: 150px;
+  display: flex;
   justify-content: space-around;
   list-style-type: none;
-
 }
