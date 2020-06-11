@@ -25,9 +25,17 @@ ul li a{
   text-decoration: none;
   height: 100%;
 }
-ul li a:hover > i,
-ul li a:hover{
+.menu > li a:hover > i,
+.menu > li a:hover{
   color:#000000;
+}
+.dropdown > li:hover {
+  background-color: grey;
+
+}
+.dropdown > li:hover > a,
+.dropdown > li:hover i  {
+  color: black;
 }
 ul li.button a:hover{
   color: rgb(139, 149, 158);
@@ -63,7 +71,7 @@ header .menu.center{
   margin-left: auto;
   position: relative;
 }
-header .menu.center li{
+header .menu.center > li{
   padding: 0 7px;
 }
 /* menu di destra */
@@ -105,13 +113,12 @@ header .menu.right{
   display: none;
 }
 .dropdown.product li{
-  width: 228px;
+  width: 299px;
+  padding: 0 40px;
 }
-.dropdown li{
-  width: 130px;
-}
+
 .dropdown.product{
-  height: 440px;
+  height: 421px;
   width: 600px;
   left: -50px;
   white-space: nowrap;
@@ -121,27 +128,34 @@ header .menu.right{
   padding-right: 15px;
 }
 .dropdown.risorse{
-  /* width: 200px; */
-  height: 290px;
+  width: 200px;
+  height: 280px;
   left: 144px;
   white-space: nowrap;
 }
+.dropdown.risorse li{
+  width: 199px;
+  padding: 0 30px;
+}
 .dropdown.azienda{
-  /* width: 200px; */
-  height: 310px;
+  width: 200px;
+  height: 281px;
   left: 210px;
   white-space: nowrap;
 }
+.dropdown.azienda li{
+  width: 200px;
+  padding: 0 40px;
+}
 .dropdown.aiuto{
-  /* width: 200px; */
-  height: 160px;
+  width: 200px;
+  height: 140px;
   left: 210px;
   white-space: nowrap;
 }
-.dropdown.risorse,
-.dropdown.azienda,
-.dropdown.aiuto{
-  padding: 5px 40px;
+.dropdown.aiuto li{
+  width: 200px;
+  padding: 0 40px;
 }
 .active{
   display: flex;

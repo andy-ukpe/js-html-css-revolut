@@ -23,18 +23,14 @@ $(document).ready(
   // quando si clicca sulla lingua la freccia punta verso l'alto
     $('.lang').mouseenter(
       function(){
-         $('.arrow-down').addClass('display');
-         $('.arrow-down').removeClass('show');
-         $('.arrow-up').addClass('show');
-         $('.arrow-up').removeClass('display')
+        $('.arrow i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    
       }
     );
     $('.lang').mouseleave(
       function(){
-         $('.arrow-down').addClass('show');
-         $('.arrow-down').removeClass('display');
-         $('.arrow-up').addClass('display');
-         $('.arrow-up').removeClass('show');
+        $('.arrow i').addClass('fa-chevron-down').removeClass('fa-chevron-up');
+
       }
     );
   }
