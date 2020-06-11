@@ -3,7 +3,8 @@
   margin:0;
   box-sizing: border-box;
   font-family: 'Roboto', 'sans serif';
-  font-weight: 500;
+  font-weight: 600;
+  color: rgb(139, 149, 158);
 }
 
 .row{
@@ -14,11 +15,22 @@
 header{
   height: 70px;
   line-height: 70px;
-  background-color: red;
+  width: 100%;
   flex-direction: row;
 }
 nav{
   display: flex;
+}
+ul li a{
+  text-decoration: none;
+  height: 100%;
+}
+ul li a:hover > i,
+ul li a:hover{
+  color:#000000;
+}
+ul li.button a:hover{
+  color: rgb(139, 149, 158);
 }
 nav > .menu.center,
 nav > .menu.right{
@@ -27,24 +39,103 @@ nav > .menu.right{
 header .logo img{
   height: 25px;
 }
+/* menu di sinistra */
 header .menu.left {
   width: 300px;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+
 }
+/* menu di centro */
 header .menu.center{
   width: 400px;
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
+  margin-left: auto;
+  position: relative;
 }
 header .menu.center li{
   padding: 0 7px;
 }
+/* menu di destra */
 header .menu.right{
-  width: 150px;
+  width: 250px;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+}
+.menu.right .fa-chevron-down,
+.menu.right .fa-chevron-up {
+  font-size: 10px;
+}
+.menu.right:first-child a div{
+  width: 80px;
+}
+.menu.right .lang{
+  flex-direction: row;
+}
+/* display */
+.display{
+  display: none;
+}
+.show{
+  display: flex;
+}
+.menu.left li:first-child a{
+  color: #000000;
+}
+/* dropdown */
+.dropdown{
+  box-shadow:  0px 5px 18px -1px rgba(0,0,0,0.75);
+  position:absolute;
+  top: 70px;
+  list-style-type: none;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: none;
+}
+.dropdown li{
+  width: 228px;
+}
+.dropdown.product{
+  height: 440px;
+  width: 600px;
+  left: -50px;
+}
+.dropdown.product i{
+  font-size: 20px;
+  padding-right: 15px;
+}
+.dropdown.risorse{
+  width: 200px;
+  height: 290px;
+  left: 144px;
+}
+.dropdown.azienda{
+  width: 200px;
+  height: 310px;
+  left: 210px;
+}
+.dropdown.aiuto{
+  width: 200px;
+  height: 160px;
+  left: 210px;
+}
+.dropdown.risorse,
+.dropdown.azienda,
+.dropdown.aiuto{
+  padding: 5px 40px;
+}
+.active{
+  display: flex;
+}
+.button a{
+  background-color: #eb008d;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 25px;
+  display: inline;
 }

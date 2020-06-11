@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Revolt</title>
   </head>
@@ -17,19 +18,72 @@
             </div>
 
             <ul class="menu left">
-              <li>PERSONALE</li>
-              <li>BUSSINESS</li>
+              <li>
+                <a href="#">PERSONALE</a>
+                </li>
+              <li>
+                <a href="#">BUSSINESS</a>
+                </li>
             </ul>
-            <ul class="menu center">
-              <li>Tariffazione</li>
-              <li>Prodotto</li>
-              <li>Risorse</li>
-              <li>Azienda</li>
-              <li>Aiuto</li>
+            <ul class="menu center ">
+              <li>
+                <a href="#">Tariffazione</a>
+                </li>
+              <li  class="with-dropdown">
+                <a href="#">Prodotto</a>
+                <ul class="dropdown product">
+                  <li><a href="#"><i class="fas fa-globe-americas"></i>Panoramica del prodotto</a></li>
+                  <li><a href="#"><i class="fas fa-wallet"></i>Conti</a></li>
+                  <li><a href="#"><i class="fas fa-exchange-alt"></i>Pagamenti</a></li>
+                  <li><a href="#"><i class="fas fa-credit-card"></i>Carte delle Società</a></li>
+                  <li><a href="#"><i class="fas fa-lock"></i>Autorizazzioni e ruoli</a></li>
+                  <li><a href="#"><i class="fas fa-edit"></i>Per i commercialisti</a></li>
+                  <li><a href="#"><i class="fas fa-rocket"></i>API e integrazioni</a></li>
+                  <li><a href="#"><i class="fas fa-mobile-alt"></i>App per smartphone</a></li>
+                  <li><a href="#"><i class="fas fa-shield-alt"></i>Sicurezza</a></li>
+                  <li><a href="#"><i class="fas fa-gift"></i>Peck</a></li>
+                </ul>
+              </li>
+              <li class="with-dropdown">
+                <a href="#">Risorse</a>
+                <ul class="dropdown risorse">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Comunity</a></li>
+                  <li><a href="#">Centro Assistenza</a></li>
+                  <li><a href="#">Webinair</a></li>
+                </ul>
+              </li>
+              <li class="with-dropdown">
+                <a href="#">Azienda</a>
+                <ul class="dropdown azienda">
+                  <li><a href="#">Chi Siamo</a></li>
+                  <li><a href="#">Lavora con Noi</a></li>
+                  <li><a href="#">Affiliates</a></li>
+                  <li><a href="#">Contatto</a></li>
+                </ul>
+              </li>
+              <li class="with-dropdown">
+                <a href="#">Aiuto</a>
+                <ul class="dropdown aiuto">
+                  <li><a href="#">Chi Siamo</a></li>
+                  <li><a href="#">Contatto</a></li>
+                </ul>
+              </li>
             </ul>
             <ul class="menu right">
-              <li>IT</li>
-              <li>Scarica l'app</li>
+              <li>
+                <a href="#" >
+                  <div class="lang">
+                    <span class="arrow-down"><i class="fas fa-chevron-down"></i></span>
+                    <span class="arrow-up display"><i class="fas fa-chevron-up"></i></span>
+                    <span>IT</span>
+                  </div>
+
+                </a>
+              </li>
+              <li class="button">
+                <a href="#">Scarica l'app</a>
+              </li>
             </ul>
         </nav>
 
@@ -39,7 +93,9 @@
       <!-- fine menu logo -->
     </header>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js">
     </script>
+
   </body>
 </html>
