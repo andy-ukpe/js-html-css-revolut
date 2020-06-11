@@ -32,6 +32,13 @@ ul li a:hover{
 ul li.button a:hover{
   color: rgb(139, 149, 158);
 }
+.dropdown li a span{
+  font-size: 13px;
+  color: #eb008d;
+  position:relative;
+  left: -10px;
+  top: -14px;
+}
 nav > .menu.center,
 nav > .menu.right{
   justify-content: flex-end;
@@ -97,32 +104,39 @@ header .menu.right{
   flex-wrap: wrap;
   display: none;
 }
-.dropdown li{
+.dropdown.product li{
   width: 228px;
+}
+.dropdown li{
+  width: 130px;
 }
 .dropdown.product{
   height: 440px;
   width: 600px;
   left: -50px;
+  white-space: nowrap;
 }
 .dropdown.product i{
   font-size: 20px;
   padding-right: 15px;
 }
 .dropdown.risorse{
-  width: 200px;
+  /* width: 200px; */
   height: 290px;
   left: 144px;
+  white-space: nowrap;
 }
 .dropdown.azienda{
-  width: 200px;
+  /* width: 200px; */
   height: 310px;
   left: 210px;
+  white-space: nowrap;
 }
 .dropdown.aiuto{
-  width: 200px;
+  /* width: 200px; */
   height: 160px;
   left: 210px;
+  white-space: nowrap;
 }
 .dropdown.risorse,
 .dropdown.azienda,
